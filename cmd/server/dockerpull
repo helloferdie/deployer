@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cd $1
+
+echo "login docker"
+sudo docker login -u="$2" -p="$3"
+
+echo "pull latest image"
+sudo docker compose pull
+echo "pull complete"
+
+echo "build"
+sudo docker compose up --build -d
+echo "build complete"
+
+echo "prune unused image"
+sudo docker image prune -f
+echo "prun complete"

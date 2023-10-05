@@ -1,0 +1,7 @@
+.env
+/cmd/client/.env
+/cmd/server/.env
+
+/sample
+/log
+/build

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "build"
+#env GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -o main main.go
+env GOOS=darwin GOARCH=arm64 go build -ldflags "-s -w" -o main main.go
+echo "build complete"
