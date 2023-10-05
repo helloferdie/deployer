@@ -1,4 +1,5 @@
 .env
+.DS_Store
 /cmd/client/.env
 /cmd/server/.env
 
